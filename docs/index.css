@@ -37,7 +37,7 @@ html {
     /*background-color: plum;*/
     /*background: linear-gradient(to bottom, #ff69b4, #ffffff);*/
     /*background: black;*/
-    background-image: url("../resources/guts.jpg");
+    background-image: url("resources/guts.jpg");
     background-size: 90vw;
 
     height: 90vh;
