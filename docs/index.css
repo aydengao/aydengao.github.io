@@ -38,9 +38,9 @@ html {
     /*background: linear-gradient(to bottom, #ff69b4, #ffffff);*/
     /*background: black;*/
     background-image: url("resources/guts.jpg");
-    background-size: 90vw;
+    background-size: 100vw;
 
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     letter-spacing: 5px;
@@ -51,6 +51,15 @@ html {
     font-size: 5rem;
     text-align: center;
     color: white;
+}
+
+/*ROOT container*/
+.rootContainer {
+    /*width: 100%;*/
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Side Navigation Bar styling */
@@ -111,58 +120,39 @@ html {
     background-color: plum;
 }
 
-/*Heading*/
+/*Heading / Spacing*/
 .heading{
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 4rem;
+    font-weight: bolder;
 }
-
-/*ROOT container*/
-.rootContainer {
-    width: 100%;
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-/*HOME*/
-#home {
-    flex: 1;
-    width: 100%;
-    background-color: white;
-    color: black;
-    margin-bottom: 20vh;
+.spacing {
+    margin: 80px;
 }
 
 /*About Me*/
 #aboutMe {
-    margin: 10px;
-    /*margin-bottom: 20vh;*/
+    margin-top: 20px;
+    background: url("resources/sunset-beach2.jpg");
+    background-size: 100vw;
 }
-#aboutMe img {
-    width: 90%;
-    border: 1px white solid;
-    border-radius: 20px;
+.aboutMeInner img {
+    width: 400px;
+    height: auto;
+    margin-right: 0;
+    border-radius: 50px;
 }
-#aboutMe .meContainer {
-    flex: 1;
-    justify-self: center;
-    justify-content: center;
+.padding {
+    margin: 20px;
+}
+
+.subHeading {
+    margin-bottom: 20px;
+}
+
+.aboutMeInner {
+    justify-content: space-around;
     align-items: center;
-}
-#aboutMe .innerText{
-    height: 80vh;
-    padding: 1rem;
     display: flex;
-    flex-direction: row;
-    text-align: left;
-    /*border: 1px black solid;*/
-    /*border-radius: 5px;*/
-}
-#aboutMe .innerText p {
-    flex: 2;
-    align-self: center;
-    font-size: 1.5rem;
 }
 
 /*Projects*/
@@ -170,10 +160,11 @@ html {
 #projects {
     display: flex;
     flex-direction: column;
+    background: linear-gradient(#e7c0a4, #FFFFFF, #FFFFFF);
 }
 
 .projectText {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .gridContainer {
@@ -184,6 +175,7 @@ html {
     grid-column-gap: 50px; /* Adjust the gap between columns */
     height: 70rem;
     width: 75%;
+    margin-left: 20px;
 }
 .gridItem {
     border-radius: 20px;
